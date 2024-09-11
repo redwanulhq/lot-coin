@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/image/fav.png" type="image/x-icon" />
+    <title>Lotcoin</title>
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="pre-loader">
+      <div class="loader"></div>
+    </div>
+    <header>
+      <div>
+        <a class="logo" href="/"><span>L</span>otcoin</a>
+      </div>
+      <nav>
+        <a class="active" href="/"><i class="fas fa-home"></i> HOME</a>
+        <a href="about"><i class="fas fa-info-circle"></i> ABOUT LOTCOIN</a>
+        <a href="contact"><i class="fas fa-envelope"></i> CONTACT</a>
+      </nav>
+      <!-- For small device..... -->
+      <div id="toggle"></div>
+      <div id="sidebar">
+        <div>
+          <a class="active" href="/"><i class="fas fa-home"></i> HOME</a>
+          <a href="about"><i class="fas fa-info-circle"></i> ABOUT LOTCOIN</a>
+          <a href="contact"><i class="fas fa-envelope"></i> CONTACT</a>
+        </div>
+      </div>
+      <!-- For small device..... -->
+    </header>
+    <section class="home-hero">
+      <h1>Welcome to <span>Lotcoin</span></h1>
+      <h2><span class="test"></span></h2>
+      <div class="home-hero-bottom"></div>
+    </section>
+    <section class="home-hero-address">
+      <p>
+        Contract Address: 0x651bfbb26455294408aabc61a7adf427bf149898 (<a
+          href="#"
+          >BscScan</a
+        >)
+      </p>
+      <p>
+        <a class="ancore-right-border" href="#">Bogged Chart</a
+        ><a href="#">Poocoin Chart</a>
+      </p>
+    </section>
+    <section class="listed-on">
+      <h3>Listed on</h3>
+      <div class="listed-on-imgs">
+        <a href="#"><img src="./assets/image/cmc.png" alt="" /></a>
+        <a href="#"><img src="./assets/image/coingecko.png" alt="" /></a>
+      </div>
+    </section>
+    <div class="shape-divider">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+        <path
+          fill="#161723"
+          fill-opacity="1"
+          d="M0,32L720,96L1440,32L1440,320L720,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+    <section class="counting">
+      <div class="main-container">
+        <div class="counter1">
+          <div><img src="./assets/image/counter1.png" alt="" /></div>
+          <h3><span class="counter">300</span> M</h3>
+          <h4>Circulating Supply</h4>
+        </div>
+        <div class="counter2">
+          <div><img src="./assets/image/counter2.png" alt="" /></div>
+          <h3><span class="counter">90</span> M</h3>
+          <h4>Burned Tokens</h4>
+        </div>
+      </div>
+    </section>
+    <section class="home-welcome">
+      <div class="main-container">
+        <h3>Welcome to <span class="test2"></span></h3>
+      </div>
+    </section>
+    <footer>
+      <div class="main-container">
+        <div class="footer-content">
+          <div class="footer-content-left">
+            <p>
+              Contract Address: 0x651bfbb26455294408aabc61a7adf427bf149898 (<a
+                href="#"
+                >BscScan</a
+              >)
+            </p>
+            <p>
+              <a class="ancore-right-border" href="#">Bogged Chart</a
+              ><a href="#">Poocoin Chart</a>
+            </p>
+          </div>
+          <div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-reddit-alien"></i></a>
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © Copyright 2021 | All rights reserved by
+        <a href="#">Lotcoin1</a>
+      </div>
+    </footer>
+
+    <!-- JavaScript codes -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+      var options = {
+        strings: [" An era of", " most active ", " trending coin "],
+        typeSpeed: 70,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true,
+      };
+      var typed = new Typed(".test", options);
+    </script>
+    <script>
+      var options2 = {
+        strings: [" LOTCOIN. ", " the good life. ", " the future. "],
+        typeSpeed: 70,
+        backSpeed: 40,
+        backDelay: 2000,
+        loop: true,
+      };
+      var typed2 = new Typed(".test2", options2);
+    </script>
+    <script>
+      let counter1 = document.querySelector(".counter1");
+      let counter2 = document.querySelector(".counter2");
+      counter1.onmouseenter = function () {
+        counter1.classList.add("active");
+      };
+      counter1.onmouseleave = function () {
+        counter1.classList.remove("active");
+      };
+      counter2.onmouseenter = function () {
+        counter2.classList.add("active");
+      };
+      counter2.onmouseleave = function () {
+        counter2.classList.remove("active");
+      };
+    </script>
+    <script>
+      $(document).ready(function () {
+        $(".counter").counterUp({
+          delay: 10,
+          time: 800,
+        });
+      });
+    </script>
+    <script>
+      $(window).load(function () {
+        $(".pre-loader").fadeOut();
+      });
+    </script>
+  </body>
+</html>

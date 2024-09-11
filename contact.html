@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/image/fav.png" type="image/x-icon" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a class="logo" href="/"><span>L</span>otcoin</a>
+      </div>
+      <nav>
+        <a href="/"><i class="fas fa-home"></i> HOME</a>
+        <a href="about"><i class="fas fa-info-circle"></i> ABOUT LOTCOIN</a>
+        <a class="active" href="contact"
+          ><i class="fas fa-envelope"></i> CONTACT</a
+        >
+      </nav>
+      <!-- For small device..... -->
+      <div id="toggle"></div>
+      <div id="sidebar">
+        <div>
+          <a href="/"><i class="fas fa-home"></i> HOME</a>
+          <a href="about"><i class="fas fa-info-circle"></i> ABOUT LOTCOIN</a>
+          <a class="active" href="contact"
+            ><i class="fas fa-envelope"></i> CONTACT</a
+          >
+        </div>
+      </div>
+      <!-- For small device..... -->
+    </header>
+    <section class="main-hero">
+      <h1>Contact Us</h1>
+      <h2 class="main-hero-cu">
+        Join our Community <span class="test"></span>
+      </h2>
+    </section>
+    <section class="cu-content">
+      <h2 class="cu-content-title">Join the Lotcoin1 Community</h2>
+      <div class="social-wrapper">
+        <h3>Discord</h3>
+        <p>
+          Join our community of over 1,000 members for live discussions, help,
+          and in-depth news about Lotcoin1.
+        </p>
+        <a href="#">CLICK HERE</a>
+        <i class="fab fa-discord"></i>
+      </div>
+      <div class="social-wrapper">
+        <h3>Telegram</h3>
+        <p>
+          Join our Telegram of over 1,000 members for live discussions, help,
+          and in-depth news about Lotcoin1.
+        </p>
+        <a href="#">CLICK HERE</a>
+        <i class="fab fa-telegram-plane"></i>
+      </div>
+    </section>
+    <footer>
+      <div class="main-container">
+        <div class="footer-content">
+          <div class="footer-content-left">
+            <p>
+              Contract Address: 0x651bfbb26455294408aabc61a7adf427bf149898 (<a
+                href="#"
+                >BscScan</a
+              >)
+            </p>
+            <p>
+              <a class="ancore-right-border" href="#">Bogged Chart</a
+              ><a href="#">Poocoin Chart</a>
+            </p>
+          </div>
+          <div>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-reddit-alien"></i></a>
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © Copyright 2021 | All rights reserved by
+        <a href="#">Lotcoin1</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/typed.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+      var options = {
+        strings: [
+          " over 1,000 strong ",
+          " to learn more about us ",
+          " for free help ",
+          " general chat ",
+        ],
+        typeSpeed: 70,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true,
+      };
+      var typed = new Typed(".test", options);
+    </script>
+    <script>
+      $(window).load(function () {
+        $(".pre-loader").fadeOut();
+      });
+    </script>
+  </body>
+</html>
